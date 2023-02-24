@@ -1,5 +1,4 @@
-# sfcc-sfra-vs-code-snippets
-Salesforce Commerce Cloud SFRA VS Code Snippets
+# Salesforce Commerce Cloud SFRA VS Code Snippets
 
 This snippet can be added to VS Code and with the shortcut prefixes , you can add code blocks and swiftly do development on SFRA projects in SFCC.
 
