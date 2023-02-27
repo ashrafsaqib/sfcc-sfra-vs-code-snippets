@@ -1,0 +1,30 @@
+{
+	"sfccsitepreferenceisml": {
+		"scope": "isml,html",
+		"prefix": "sfra-isml-sitepreferenceisml",
+		"body": [
+			"<isif condition=\"${dw.system.Site.getCurrent().preferences.custom.explictMailingListOptIn != true}\"></isif>"
+		],
+		"description": "site preferences isml if condition"
+	}
+	,
+	"siteurl": {
+		"scope": "isml,html",
+		"prefix": "sfra-isml-url",
+		"body": [
+			"URLUtils.url('Page-Show', 'cid', 'privacy-policy')"
+		],
+		"description": "internal link"
+	}
+	
+	,
+	"resourcetext": {
+		"scope": "isml,html",
+		"prefix": "sfra-isml-resourcetext",
+		"body": [
+			"${Resource.msg('description.privacypolicy.registration.loyalityoptin', 'registration', null)}"
+		],
+		"description": "Resrouce text"
+	}	
+
+}

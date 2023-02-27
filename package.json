@@ -1,0 +1,35 @@
+{
+  "name": "sfra-vs-snippets",
+  "displayName": "SFRA VS Snippets",
+  "description": "Salesfroce Commerce Cloud SFRA Code Snippets",
+  "version": "1.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "publisher": "SaqibAshraf",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashrafsaqib/sfcc-sfra-vs-code-snippets"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/sfra-js.code-snippets"
+      }
+      ,
+      {
+        "language": "isml",
+        "path": "./snippets/sfra-isml.code-snippets"
+      }
+      ,
+      {
+        "language": "html",
+        "path": "./snippets/sfra-isml.code-snippets"
+      }
+    ]
+  }
+}

@@ -1,16 +1,37 @@
-# Salesforce Commerce Cloud SFRA VS Code Snippets
+# SFCC SFRA VS Code Snippets
 
-This snippet can be added to VS Code and with the shortcut prefixes , you can add code blocks and swiftly do development on SFRA projects in SFCC.
+Snippets to help you write SFRA code faster in VS code.
 
--- First Snippet is Adding Logger --- 
-ShortCut: sfcclog  
-Code: dw.system.Logger.getLogger('custom', 'custom').error('$1' + JSON.stringify($2));  
+## Features
+
+Quickly write code by just typing prefix [sfra-] and relevant keywords
+
+### Controllers / Helpers File Code
+- Logs
+- Site Preferences
+- Custom Objects Query
+- URL
+- Resource / Language Files text
+
+### ISML code 
+- site preference
+- url
+- Resource Text
+
+## Extension Settings
+
+Just Install and enable. The prefix is sfra- for any code snippets to appear in suggestion. 
 
 
--- First Snippet is Adding Logger --- 
-ShortCut: sfccsite  
-Code: 
-`var Site = require('dw/system/Site');
-  var $1 = Site.current.getCustomPreferenceValue(''); `
-  
-  
+* `myExtension.enable`: Enable/disable this extension.
+
+
+
+## Release Notes
+
+
+### 1.0.0
+
+Initial release of Salesforce Commerce Cloud SFRA VS Code Snippets
+
+**Enjoy!**
