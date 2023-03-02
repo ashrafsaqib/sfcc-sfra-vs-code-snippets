@@ -36,18 +36,7 @@
 			"Resource.msg('description.privacypolicy.registration.loyalityoptin', 'registration', null)"
 		],
 		"description": "Resrouce text"
-	}
-	,
-	"customobjectsquery": {
-		"scope": "javascript,typescript",
-		"prefix": "sfra-customobjectmanager",
-		"body": [
-			"var CustomObjMgr = require('dw/object/CustomObjectMgr');var queryMap = require('dw/util/HashMap')();queryMap.put('custom.status', 'COMPLETED');var payProcessingObjItr = CustomObjMgr.queryCustomObjects('PaymentProcessing', queryMap, null);while (payProcessingObjItr.hasNext()) {var payProcessingObj = payProcessingObjItr.next();"
-		],
-		"description": "Resrouce text"
-	}
-	
-	,
+	},
 	"customObjects": {
 		"scope": "javascript,typescript",
 		"prefix": "sfra-customobjects",

@@ -12,6 +12,9 @@ Quickly write code by just typing prefix [sfra-] and relevant keywords
 - Custom Objects Query
 - URL
 - Resource / Language Files text
+- Controller Override
+- Controller Function
+- Transaction
 
 ### ISML code 
 - site preference
@@ -33,5 +36,12 @@ Just Install and enable. The prefix is sfra- for any code snippets to appear in 
 ### 1.0.0
 
 Initial release of Salesforce Commerce Cloud SFRA VS Code Snippets
+
+### 1.0.4
+
+Added Snippets for Transaction, Controller Override , Controller Function
+
+
+
 
 **Enjoy!**

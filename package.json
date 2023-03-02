@@ -1,12 +1,13 @@
 {
   "name": "sfra-vs-snippets",
-  "displayName": "SFRA VS Snippets",
+  "displayName": "SFCC SFRA VS Snippets",
   "description": "Salesfroce Commerce Cloud SFRA Code Snippets",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "engines": {
     "vscode": "^1.75.0"
   },
   "publisher": "SaqibAshraf",
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/ashrafsaqib/sfcc-sfra-vs-code-snippets"
