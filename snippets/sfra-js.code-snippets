@@ -1,12 +1,6 @@
 {
-	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
-	// Placeholders with the same ids are connected.
-	// Example:
-	"clog": {
+
+	"log": {
 		"scope": "javascript,typescript",
 		"prefix": "sfra-log",
 		"body": [
@@ -51,6 +45,44 @@
 			"var CustomObjMgr = require('dw/object/CustomObjectMgr');var queryMap = require('dw/util/HashMap')();queryMap.put('custom.status', 'COMPLETED');var payProcessingObjItr = CustomObjMgr.queryCustomObjects('PaymentProcessing', queryMap, null);while (payProcessingObjItr.hasNext()) {var payProcessingObj = payProcessingObjItr.next();"
 		],
 		"description": "Resrouce text"
+	}
+	
+	,
+	"customObjects": {
+		"scope": "javascript,typescript",
+		"prefix": "sfra-customobjects",
+		"body": [
+			"var CustomObjMgr = require('dw/object/CustomObjectMgr');\nvar queryMap = require('dw/util/HashMap')();\nqueryMap.put('custom.status', 'COMPLETED');\nvar ObjItr = CustomObjMgr.queryCustomObjects('PaymentProcessing', queryMap, null); \nwhile (ObjItr.hasNext()) {\n  var Obj = ObjItr.next();\n}"
+		],
+		"description": "Custom Objects"
+	},
+	"transaction": {
+		"scope": "javascript,typescript",
+		"prefix": "sfra-transaction",
+		"body": [
+			"var Transaction = require('dw/system/Transaction');",
+			"Transaction.wrap(function () {",
+			"});"
+		],
+		"description": "Transaction"
+	}
+	,
+	"controllerFunction": {
+		"scope": "javascript,typescript",
+		"prefix": "sfra-controller-function",
+		"body": [
+			"server.post('Any-Endpoint', function (\n  req,\n  res,\n  next\n) {\n \n  res.render('template/any', { pageData: pageData });\n  res.json({\n    success: true,\n  });\n\n  next();\n});"
+		],
+		"description": "Controller Function"
+	}
+	,
+	"controllerOverride": {
+		"scope": "javascript,typescript",
+		"prefix": "sfra-controller-override",
+		"body": [
+			"'use strict';\n\nvar server = require('server');\nserver.extend(module.superModule);\n\nmodule.exports = server.exports();"
+		],
+		"description": "Controller Override"
 	}
 	
 
