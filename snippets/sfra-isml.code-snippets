@@ -3,7 +3,7 @@
 		"scope": "isml,html",
 		"prefix": "sfra-isml-sitepreferenceisml",
 		"body": [
-			"<isif condition=\"${dw.system.Site.getCurrent().preferences.custom.explictMailingListOptIn != true}\"></isif>"
+			"<isif condition=\"${dw.system.Site.current.preferences.custom.AnyCustoPref === true}\"></isif>"
 		],
 		"description": "site preferences isml if condition"
 	}
