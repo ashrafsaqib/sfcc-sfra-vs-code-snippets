@@ -23,14 +23,6 @@ Quickly write code by just typing prefix [sfra-] and relevant keywords
 - url [sfra-url-isml]
 - Resource Text [sfra-resourcetext-isml]
 
-## Extension Settings
-
-Just Install and enable. The prefix is sfra- for any code snippets to appear in suggestion. 
-
-
-* `myExtension.enable`: Enable/disable this extension.
-
-
 
 ## Release Notes
 
