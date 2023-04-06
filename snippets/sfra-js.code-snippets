@@ -72,6 +72,22 @@
 			"'use strict';\n\nvar server = require('server');\nserver.extend(module.superModule);\n\nmodule.exports = server.exports();"
 		],
 		"description": "Controller Override"
+	},
+	"sessionData": {
+		"scope": "javascript,typescript",
+		"prefix": "sfra-session-data",
+		"body": [
+			"req.session.privacyCache.get('name')\nreq.session.privacyCache.set('name', value);"
+		],
+		"description": "Session set / get"
+	},
+	"currentCustomer": {
+		"scope": "javascript,typescript",
+		"prefix": "sfra-customer",
+		"body": [
+			"req.currentCustomer.raw"
+		],
+		"description": "Current Customer"
 	}
 	
 
