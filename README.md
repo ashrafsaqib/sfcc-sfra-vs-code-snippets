@@ -15,6 +15,8 @@ Quickly write code by just typing prefix [sfra-] and relevant keywords
 - Controller Override
 - Controller Function
 - Transaction
+- Session Data Get / Set
+- Get Current Customer
 
 ### ISML code 
 - site preference
@@ -42,6 +44,9 @@ Initial release of Salesforce Commerce Cloud SFRA VS Code Snippets
 Added Snippets for Transaction, Controller Override , Controller Function
 
 
+### 1.0.5
+
+Session Data get / set , Currently logged customer 
 
 
 **Enjoy!**
