@@ -11,7 +11,7 @@
 	},
 	"sfra-siteprefencejs": {
 		"scope": "javascript,typescript",
-		"prefix": "sfra-siteprefencejs",
+		"prefix": "sfra-sitepreference",
 		"body": [
 			"var Site = require('dw/system/Site');\nvar $1 = Site.current.getCustomPreferenceValue('$2');",
 			"$3"

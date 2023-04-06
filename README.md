@@ -7,21 +7,21 @@ Snippets to help you write SFRA code faster in VS code.
 Quickly write code by just typing prefix [sfra-] and relevant keywords
 
 ### Controllers / Helpers File Code
-- Logs
-- Site Preferences
-- Custom Objects Query
-- URL
-- Resource / Language Files text
-- Controller Override
-- Controller Function
-- Transaction
-- Session Data Get / Set
-- Get Current Customer
+- Logs [sfra-log]
+- Site Preferences [sfra-sitepreference]
+- Custom Objects Query [sfra-customobjects]
+- URL [sfra-urls]
+- Resource / Language Files text [sfra-resourcetext]
+- Controller Override [sfra-controller-override]
+- Controller Function [sfra-controller-function]
+- Transaction [sfra-transaction]
+- Session Data Get / Set [sfra-session-data]
+- Get Current Customer [sfra-customer]
 
 ### ISML code 
-- site preference
-- url
-- Resource Text
+- site preference [sfra-sitepreference-isml]
+- url [sfra-url-isml]
+- Resource Text [sfra-resourcetext-isml]
 
 ## Extension Settings
 
@@ -47,6 +47,10 @@ Added Snippets for Transaction, Controller Override , Controller Function
 ### 1.0.5
 
 Session Data get / set , Currently logged customer 
+
+### 1.0.6
+
+Refactored snippets structure
 
 
 **Enjoy!**
