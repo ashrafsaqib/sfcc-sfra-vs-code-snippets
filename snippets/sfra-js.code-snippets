@@ -4,7 +4,7 @@
 		"scope": "javascript,typescript",
 		"prefix": "sfra-log",
 		"body": [
-			"dw.system.Logger.getLogger('custom', 'custom').error('$1' + JSON.stringify($2));",
+			"var Logger = require('dw/system/Logger');\nLogger.getLogger('custom', 'custom').error('$1' + JSON.stringify($2));",
 			"$3"
 		],
 		"description": "Custom Logging"
@@ -89,6 +89,40 @@
 		],
 		"description": "Current Customer"
 	}
+	,
+	"currentSite": {
+		"scope": "javascript,typescript",
+		"prefix": "sfra-site",
+		"body": [
+			"var Site = require('dw/system/Site');\nSite.getCurrent().getID();"
+		],
+		"description": "Current Site"
+	},
+	"currentLocale": {
+		"scope": "javascript,typescript",
+		"prefix": "sfra-locale-country",
+		"body": [
+			"var Locale = require('dw/util/Locale');\nvar currentLocale = Locale.getLocale(req.locale.id);\ncurrentLocale.country"
+		],
+		"description": "Current Locale and locale country"
+	},
+	"currentInstance": {
+		"scope": "javascript,typescript",
+		"prefix": "sfra-instance",
+		"body": [
+			"var System = require('dw/system/System');\nSystem.getInstanceType() !== System.PRODUCTION_SYSTEM"
+		],
+		"description": "Get Instance Type"
+	},
+	"customCache": {
+		"scope": "javascript,typescript",
+		"prefix": "sfra-cache-custom",
+		"body": [
+			"var CacheMgr = require('dw/system/CacheMgr');\nCacheMgr.getCache('anyCache');\nvar cacheKey = pxCache.get('anykey');\npxCache.put('anykey, 'anyvalue');\n"
+		],
+		"description": "Get Custom Cache"
+	}
+	
 	
 
 }

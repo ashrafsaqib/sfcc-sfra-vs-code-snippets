@@ -17,7 +17,10 @@ Quickly write code by just typing prefix [sfra-] and relevant keywords
 - Transaction [sfra-transaction]
 - Session Data Get / Set [sfra-session-data]
 - Get Current Customer [sfra-customer]
-
+- Get Current Site [sfra-site]
+- Get Current Locale or Country [sfra-locale-country]
+- Get Current Instance Type [sfra-instance]
+- Get Custom Cache [sfra-cache-custom]
 ### ISML code 
 - site preference [sfra-sitepreference-isml]
 - url [sfra-url-isml]
@@ -43,6 +46,15 @@ Session Data get / set , Currently logged customer
 ### 1.0.6
 
 Refactored snippets structure
+### 1.0.8
+Short Codes Added for following
+- Get Current Site
+- Get Current Locale or Country
+- Get Current Instance Type
+- Get Custom Cache
+- remote Include 
 
+I Update this extension twice a month! So good things keep coming!
 
+Suggestions at github repo at https://github.com/ashrafsaqib/sfcc-sfra-vs-code-snippets
 **Enjoy!**

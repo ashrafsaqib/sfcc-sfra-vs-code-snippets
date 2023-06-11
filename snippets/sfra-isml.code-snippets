@@ -16,13 +16,20 @@
 		],
 		"description": "internal link"
 	}
-	
 	,
 	"resourcetext": {
 		"scope": "isml,html",
 		"prefix": "sfra-resourcetext-isml",
 		"body": [
 			"${Resource.msg('description.privacypolicy.registration.loyalityoptin', 'registration', null)}"
+		],
+		"description": "Resrouce text"
+	},
+	"remoteInclude": {
+		"scope": "isml,html",
+		"prefix": "sfra-resourcetext-isml",
+		"body": [
+			"<isinclude template=\"account/dashboardProfileCards\"/>"
 		],
 		"description": "Resrouce text"
 	}	
