@@ -56,5 +56,5 @@ Short Codes Added for following
 
 I Update this extension twice a month! So good things keep coming!
 
-Suggestions at github repo at https://github.com/ashrafsaqib/sfcc-sfra-vs-code-snippets
+Add your Suggestions or Issues at github repo at https://github.com/ashrafsaqib/sfcc-sfra-vs-code-snippets/issues
 **Enjoy!**
