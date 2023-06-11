@@ -1,6 +1,6 @@
-# Salesfroce Commerce Cloud SFRA Code Examples & Snippets
+# Salesforce Commerce Cloud SFRA Code Examples & Snippets
 
-Snippets to help you write SFRA code faster in VS code.
+Snippets to help you write SFCC SFRA code faster in VS code.
 
 ## Features
 
