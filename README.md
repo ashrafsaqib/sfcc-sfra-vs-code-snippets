@@ -1,4 +1,4 @@
-# SFCC SFRA VS Code Snippets
+# Salesfroce Commerce Cloud SFRA Code Examples & Snippets
 
 Snippets to help you write SFRA code faster in VS code.
 
