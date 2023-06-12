@@ -25,6 +25,7 @@ Quickly write code by just typing prefix [sfra-] and relevant keywords
 - site preference [sfra-sitepreference-isml]
 - url [sfra-url-isml]
 - Resource Text [sfra-resourcetext-isml]
+- Remote Include [sfra-include-remote-isml]
 
 
 ## Release Notes
