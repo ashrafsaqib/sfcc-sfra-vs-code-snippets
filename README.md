@@ -22,6 +22,8 @@ var anyPref = Site.current.getCustomPreferenceValue('anyPref');
 ### Custom Objects Query [sfra-customobjects]
 
 ```
+
+//query custom objects based on custom attributes
 var CustomObjMgr = require('dw/object/CustomObjectMgr');
 var queryMap = require('dw/util/HashMap')(); 
 queryMap.put('custom.status', 'COMPLETED');
@@ -29,6 +31,18 @@ var customObjIterator = CustomObjMgr.queryCustomObjects('PaymentProcessing', que
 while (customObjIterator.hasNext()) {
     var payProcessingObj = customObjIterator.next();
 }
+
+//find custom object based on ID 
+
+var CustomObjectMgr = require("dw/object/CustomObjectMgr");
+var customObjectType = CustomObjectMgr.getCustomObject("customObjectType", customObjID);
+const customAttr = customObjectType ? customObjectType.custom.customAttr: null;
+
+// create custom obj
+Transaction.wrap(function () {
+    var customObject = CustomObjectMgr.createCustomObject("CustomObjType", "customobj-id");
+    customObject.custom.attributeX = "anyValue";
+});
 ```
 ### URL [sfra-urls]
 
