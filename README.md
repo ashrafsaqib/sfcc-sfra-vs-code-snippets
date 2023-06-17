@@ -1,12 +1,11 @@
-# Salesforce Commerce Cloud SFRA Code Examples & Snippets
+# Salesforce Commerce Cloud SFRA Code Examples & Snippets & Cheat Sheet
 
+## VS Code Plugin
 [SFCC VS Code Snippets Plugin](https://marketplace.visualstudio.com/items?itemName=SaqibAshraf.sfra-vs-snippets) to help you write SFCC SFRA code faster in VS code.
-
-## Features
-
 Quickly write code by just typing prefix [sfra-] and relevant keywords
 
-## Controllers / Helpers File Code
+## Code Examples 
+
 ### Logs [sfra-log]
 ```
 var Logger = require('dw/system/Logger');
@@ -134,10 +133,10 @@ var cacheKey = pxCache.get('anykey');
 pxCache.put('anykey, 'anyvalue');
 ```
 ## ISML code 
-### site preference [sfra-sitepreference-isml]
-### url [sfra-url-isml]
-### Resource Text [sfra-resourcetext-isml]
-### Remote Include [sfra-include-remote-isml]
+**site preference [sfra-sitepreference-isml]**  
+**url [sfra-url-isml]**  
+**Resource Text [sfra-resourcetext-isml]**  
+**Remote Include [sfra-include-remote-isml]**  
 
 
 ## Release Notes
