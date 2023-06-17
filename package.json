@@ -2,7 +2,7 @@
   "name": "sfra-vs-snippets",
   "displayName": "Commerce Cloud SFCC SFRA Code Examples & VS Snippets",
   "description": "Salesforce Commerce Cloud SFRA Code Examples & Snippets",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "engines": {
     "vscode": "^1.75.0"
   },

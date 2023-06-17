@@ -41,7 +41,13 @@
 		"scope": "javascript,typescript",
 		"prefix": "sfra-customobjects",
 		"body": [
-			"var CustomObjMgr = require('dw/object/CustomObjectMgr');\nvar queryMap = require('dw/util/HashMap')();\nqueryMap.put('custom.status', 'COMPLETED');\nvar ObjItr = CustomObjMgr.queryCustomObjects('PaymentProcessing', queryMap, null); \nwhile (ObjItr.hasNext()) {\n  var Obj = ObjItr.next();\n}"
+			"var CustomObjMgr = require('dw/object/CustomObjectMgr');",
+			"var queryMap = require('dw/util/HashMap')(); ",
+			"queryMap.put('custom.status', 'COMPLETED');",
+			"var customObjIterator = CustomObjMgr.queryCustomObjects('PaymentProcessing', queryMap, null);",
+			"while (customObjIterator.hasNext()) {",
+			"    var payProcessingObj = customObjIterator.next();",
+			"}"
 		],
 		"description": "Custom Objects"
 	},
@@ -77,15 +83,33 @@
 		"scope": "javascript,typescript",
 		"prefix": "sfra-session-data",
 		"body": [
-			"req.session.privacyCache.get('name')\nreq.session.privacyCache.set('name', value);"
+			"//session is global object",
+			"//using privacy cache",
+			"session.privacyCache.get('name')",
+			"session.privacyCache.set('name', value);",
+			"// custom properties on session object",
+			"session.custom.anyProp = anyValue;",
+			"// access current customer logged",
+			"session.customer.profile",
+			"//access currency",
+			"session.currency.currencyCode",
+			"// you can access or modify privacy object if its initiated ",
+			"session.privacy.anyProp",
+			"// check if user is logged in ",
+			"session.userAuthenticated"
 		],
-		"description": "Session set / get"
+		"description": "Session in SFRA"
 	},
 	"currentCustomer": {
 		"scope": "javascript,typescript",
 		"prefix": "sfra-customer",
 		"body": [
-			"req.currentCustomer.raw"
+			"// you can use session global variable ",
+			"session.customer.profile",
+			"//you can use request variable inside controller",
+			"req.currentCustomer.profile",
+			"// raw is actually instance of Class Customer ",
+			"req.currentCustomer.raw.profile"
 		],
 		"description": "Current Customer"
 	}

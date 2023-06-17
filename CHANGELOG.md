@@ -30,3 +30,6 @@ Short Codes Added for following
 - Get Current Instance Type
 - Get Custom Cache
 - remote include example isml
+
+### [1.0.10]
+Updated session and customer snippet 
