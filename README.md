@@ -4,6 +4,10 @@
 [SFCC VS Code Snippets Plugin](https://marketplace.visualstudio.com/items?itemName=SaqibAshraf.sfra-vs-snippets) to help you write SFCC SFRA code faster in VS code.
 Quickly write code by just typing prefix [sfra-] and relevant keywords
 
+### Demo  
+
+![Demo Of VS Code Plugin](demo.gif)  
+
 ## Code Examples 
 
 ### Logs [sfra-log]
