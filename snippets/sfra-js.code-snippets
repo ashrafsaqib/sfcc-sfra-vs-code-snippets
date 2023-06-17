@@ -47,7 +47,16 @@
 			"var customObjIterator = CustomObjMgr.queryCustomObjects('PaymentProcessing', queryMap, null);",
 			"while (customObjIterator.hasNext()) {",
 			"    var payProcessingObj = customObjIterator.next();",
-			"}"
+			"}",
+			"// use id to find custom object",
+			"var CustomObjectMgr = require(\"dw/object/CustomObjectMgr\");",
+			"var customObjectType = CustomObjectMgr.getCustomObject(\"customObjectType\", customObjID);",
+			"const customAttr = customObjectType ? customObjectType.custom.customAttr: null;",
+			"//create custom object",
+			"Transaction.wrap(function () {",
+			"var customObject = CustomObjectMgr.createCustomObject(\"CustomObjType\", \"customobj-id\");",
+			"customObject.custom.attributeX = \"anyValue\";",
+			"});"
 		],
 		"description": "Custom Objects"
 	},

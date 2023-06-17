@@ -33,3 +33,6 @@ Short Codes Added for following
 
 ### [1.0.10]
 Updated session and customer snippet 
+
+### [1.0.11]
+Updated custom object examples for create , query and find by id methods
